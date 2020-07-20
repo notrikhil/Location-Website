@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Homepage!</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <h1>Covid 19 Cases by Zipcode!</h1>
+        </header>
+    </main>
+</body>
+
+</html>
+<div class="container">
+    <form action="/charts" method="POST">
+        <div class="row">
+            <div class="col-25">
+                <label for="lName">Zipcode</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lName" name="Location" placeholder="Enter Zipcode..">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
